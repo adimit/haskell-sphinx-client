@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS test.utf8
+  ( id INTEGER UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT
+  , doc TEXT
+  ) DEFAULT CHARACTER SET = utf8 DEFAULT COLLATE = utf8_general_ci;
+
+INSERT INTO test.utf8 (doc) VALUES ('abc def äöü ęął кгб');

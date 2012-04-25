@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS test.latin1
+  ( id INTEGER UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT
+  , doc TEXT
+  ) DEFAULT CHARACTER SET = latin1 DEFAULT COLLATE = latin1_general_ci;
+
+INSERT INTO test.latin1 (doc) VALUES ('abc def äöü');
